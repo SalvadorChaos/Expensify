@@ -1,0 +1,197 @@
+input {
+  background: #1b1c1d;
+  color: #e8e6e3;
+  width: 225px;
+}
+
+select {
+  background: #1b1c1d;
+  color: #e8e6e3;
+}
+
+.text-input {
+  border: 1px solid #575757;
+  height: 50px;
+  padding: $s-size;
+  font-size: $l-font;
+  font-weight: 300;
+}
+
+::placeholder {
+  color: silver;
+}
+
+.date-picker-input {
+  div {
+    div {
+      .DateRangePickerInput {
+        border: 1px solid #575757;
+      }
+      .DayPickerNavigation__prev--default, .DayPickerNavigation__next--default {
+        border-top-color: #383f3f;
+        border-right-color: #383f3f;
+        border-bottom-color: #383f3f;
+        border-left-color: #383f3f;
+        background-color: #181a1b;
+        color: #beb9af;
+      }
+      .CalendarDay {
+        border: 1px solid #575757;
+        color: #b00000;
+        :hover {
+          background-color: #1b1c1d;
+          color: #beb9af;
+        }
+      }
+      .CalendarDay--selected-start {
+        //background-color: #374d73;
+        //background-color: #326a9c;
+        background-color: #1C73A0;
+        border-top-color: #1c9d93;
+        border-right-color: #1c9d93;
+        border-bottom-color: #1c9d93;
+        border-left-color: #1c9d93;
+        color: #fff;
+        :hover {
+          background-color: #1C73A0;
+          color: black;
+        }
+      }
+      .CalendarDay--after-hovered-start {
+        background: skyblue;
+        color: black;
+      }
+      .CalendarDay--hovered-span {
+        background: skyblue;
+        color: black;
+      }
+      .CalendarDay--selected-span {
+        background-image: initial;
+        //background-color: #177872;
+        background-color: #0099cc;
+        border-top-color: #1c9d93;
+        border-right-color: #1c9d93;
+        border-bottom-color: #1c9d93;
+        border-left-color: #1c9d93;
+        color: #fff;
+        :hover {
+          background-color: #0099cc;
+          color: black;
+        }
+      }
+      .CalendarDay--selected-end {
+        //background-color: #374d73;
+        //background-color: #3271a8;
+        background-color: #1C73A0;
+        border-top-color: #1c9d93;
+        border-right-color: #1c9d93;
+        border-bottom-color: #1c9d93;
+        border-left-color: #1c9d93;
+        color: #fff;
+        :hover {
+          background-color: #1C73A0;
+          color: black;
+        }
+      }
+      .DayPickerKeyboardShortcuts__show--bottom-right {
+        border-right-color: #1C73A0;
+        :hover {
+          color: black;
+        }
+      }
+      .DayPickerKeyboardShortcuts__show--bottom-right:hover {
+        border-right-color: #0099cc;
+      }
+      div {
+        background: #1b1c1d;
+        color: #e8e6e3;
+        .DateRangePickerInput__arrow {
+          svg {
+            fill: silver;
+          }
+        }
+        .KeyboardShortcutRow__key {
+          background: #000;
+        }
+        .DateRangePickerInput__clear-dates {
+          .DateRangePickerInput__close-icon {
+            svg {
+              fill: silver;
+            }
+          }
+        }
+        .DateRangePickerInput__clear-dates:hover {
+          background: #b00000;
+          .DateRangePickerInput__close-icon {
+            background: #b00000;
+            svg {
+              fill: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.day-picker-input {
+  div {
+    div {
+      .SingleDatePickerInput {
+        border: 1px solid #575757;
+      }
+      .DayPickerNavigation__prev--default, .DayPickerNavigation__next--default {
+        border-top-color: #383f3f;
+        border-right-color: #383f3f;
+        border-bottom-color: #383f3f;
+        border-left-color: #383f3f;
+        background-color: #181a1b;
+        color: #beb9af;
+      }
+      .CalendarDay {
+        border: 1px solid #575757;
+        color: #b00000;
+        :hover {
+          background-color: #0099cc;;
+          color: #fff;
+        }
+      }
+      .CalendarDay--selected {
+        background-color: #1C73A0;
+        color: #fff;
+      }
+      .DayPickerKeyboardShortcuts__show--bottom-right {
+        border-right-color: #1C73A0;
+        :hover {
+          color: black;
+        }
+      }
+      .DayPickerKeyboardShortcuts__show--bottom-right:hover {
+        border-right-color: #0099cc;
+      }
+      div {
+        background: #1b1c1d;
+        color: #e8e6e3;
+        .DateRangePickerInput__arrow {
+          svg {
+            fill: #82888a;
+          }
+        }
+        .KeyboardShortcutRow__key {
+          background: #000;
+        }
+      }
+    }
+  }
+}
+
+.select {
+  @extend .text-input;
+}
+
+.textarea {
+  @extend .text-input;
+  height: 10rem;
+  background: #1b1c1d;
+  color: #e8e6e3;
+}

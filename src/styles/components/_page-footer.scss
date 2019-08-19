@@ -1,0 +1,20 @@
+.footer {
+  background: none;
+  font-size: $s-font;
+  text-align: center;
+  margin-top: $xl-size;
+  padding: $l-size $l-size 0 $l-size;
+}
+
+p {
+  color: silver;
+  margin: 25px 0px;
+}
+
+.twitter-link {
+  color: #337dff;
+  text-decoration: none;
+  &:hover {
+    color: skyblue;
+  }
+}
